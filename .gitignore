@@ -1,0 +1,35 @@
+# Файлы байт-кода Python
+__pycache__/
+*.py[cod]
+
+# Виртуальные окружения
+venv/
+env/
+.venv/
+
+# Файлы IDE
+.idea/
+.vscode/
+
+# Лог-файлы
+.pytest_cache/
+.coverage
+coverage.xml
+
+# Временные файлы
+*.egg-info/
+build/
+dist/
+
+# Отчеты тестирования
+htmlcov/
+.tox/
+
+# PyTest артефакты
+.pytest_cache/
+pytest.log
+
+# Файлы разработки
+.DS_Store
+Thumbs.db
+desktop.ini
