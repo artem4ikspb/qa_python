@@ -98,9 +98,8 @@ class TestBooksCollector:
     # возвращаем книги, подходящие детям
     def test_get_books_for_children_return_books_only_for_children(self, collector_w_books):
         children_books = collector_w_books.get_books_for_children()
-        books_in_collector = collector_w_books.get_books_genre()
-        assert len(children_books) < len(books_in_collector) and \
-                set(children_books).issubset(get_key_from_dict(books_in_collector))
+        full_book_list = get_key_from_dict(collector_w_books.get_books_genre())
+        assert set(children_books) < set(full_book_list)
 
     # получаем список Избранных книг
     def test_get_list_of_favorites_books(self, collector_w_books):
